@@ -1,0 +1,48 @@
+import { AchievementItem } from '../types';
+
+export const ACHIEVEMENTS_DATA: AchievementItem[] = [
+  {
+    id: 'achieve-project-presentation',
+    title: 'Departmental Capstone & Project Exhibition Showcase',
+    event: 'RIT Academic Innovation & Engineering Exhibition',
+    date: '2024',
+    category: 'Project Showcases',
+    description: 'Demonstrated real-world functioning hardware and software prototypes for Smart Water Tank Automation and BottlePoints to departmental faculty and peer reviewers.',
+    impact: 'Commended for hands-on hardware-software integration and practical problem-solving approach.',
+    link: 'https://github.com/ShreyasThorat72',
+    isPlaceholder: false,
+  },
+  {
+    id: 'achieve-hackathon-placeholder',
+    title: '[ADD YOUR DATA: Inter-College / National Hackathon Participation or Win]',
+    event: '[ADD YOUR DATA: Hackathon / Coding Contest Name]',
+    date: '[ADD YOUR DATA: e.g. 2024 / 2025]',
+    category: 'Competitions & Hackathons',
+    description: '[ADD YOUR DATA: Describe the problem statement your team tackled, the prototype built within 24/36/48 hours, and the outcome/ranking.]',
+    impact: '[ADD YOUR DATA: e.g. Selected among top finalist teams or received special recognition]',
+    link: 'https://github.com/ShreyasThorat72',
+    isPlaceholder: true,
+  },
+  {
+    id: 'achieve-academic-standing',
+    title: 'Consistent Academic Progress in B.Tech Computer Science (AI & ML)',
+    event: 'Rajarambapu Institute of Technology',
+    date: '2023 - Present',
+    category: 'Academic Milestones',
+    description: 'Maintaining steady coursework performance across core computing subjects including Algorithms, DBMS, Operating Systems, and Artificial Intelligence.',
+    impact: 'Currently advancing in 5th Semester with strong foundational comprehension.',
+    link: undefined,
+    isPlaceholder: false,
+  },
+  {
+    id: 'achieve-coding-milestone',
+    title: '[ADD YOUR DATA: Problem Solving / Coding Platform Milestone]',
+    event: '[ADD YOUR DATA: LeetCode / HackerRank / CodeChef]',
+    date: '[ADD YOUR DATA: e.g. 2024]',
+    category: 'Technical Recognitions',
+    description: '[ADD YOUR DATA: Solved 100+ algorithmic problems across Data Structures, Dynamic Programming, and Graph Traversals.]',
+    impact: '[ADD YOUR DATA: Built disciplined analytical thinking and time-complexity optimization]',
+    link: 'https://github.com/ShreyasThorat72',
+    isPlaceholder: true,
+  },
+];
