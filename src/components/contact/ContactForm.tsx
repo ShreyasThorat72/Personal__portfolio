@@ -31,11 +31,9 @@ export const ContactForm: React.FC = () => {
       setStatus('success');
       setFeedbackMessage(res.message);
       setFormData({ name: '', email: '', subject: '', message: '' });
-    } catch (err: unknown) {
+    } catch {
       setStatus('error');
-      setFeedbackMessage(
-        err instanceof Error ? err.message : 'An unexpected error occurred while transmitting your message.'
-      );
+      setFeedbackMessage('Unable to send your message. Please try again later.');
     }
   };
 

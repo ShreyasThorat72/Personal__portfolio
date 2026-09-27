@@ -133,9 +133,39 @@ Add a `_redirects` file to the `public/` directory:
 
 ---
 
+## 🖥️ Backend Architecture & Integration
+
+The repository includes a dedicated, production-ready Node.js & Express REST API inside the `backend/` directory.
+
+### Backend Tech Stack
+- **Runtime**: Node.js & Express.js
+- **Database**: MongoDB Atlas with Mongoose ORM
+- **Security**: Helmet, CORS, Express Rate Limit, Express Validator
+- **Email Service**: Nodemailer (SMTP / Gmail)
+
+### API Endpoints
+- `GET /api/health` — Status & uptime verification
+- `POST /api/contact` — Submits inquiries, saves to MongoDB, & triggers email notification
+- `GET /api/projects` — Retrieves project showcases (supports `?category=Full Stack`)
+- `GET /api/projects/featured` — Retrieves featured project showcases
+- `GET /api/projects/:id` — Retrieves project details by ID or slug
+- `GET /api/skills` — Retrieves technical skills matrix (supports `?category=Frontend`)
+
+### Local Backend Setup
+```bash
+cd backend
+npm install
+npm run dev
+```
+
+For full backend documentation, MongoDB seeding, email setup, and Render cloud deployment guidelines, refer to [`backend/README.md`](file:///c:/Users/Shreyas/Desktop/website/Personal__portfolio/backend/README.md).
+
+---
+
 ## 📝 License & Contact
 
 - **Author**: Shreyas Thorat
 - **GitHub**: [ShreyasThorat72](https://github.com/ShreyasThorat72)
 - **LinkedIn**: [Shreyas Thorat](https://www.linkedin.com/in/shreyas-thorat-867040214/)
 - **Email**: shreyasthorat717@gmail.com
+

@@ -24,8 +24,9 @@ export async function fetchWithFallback<T>(
       const response = await fetch(`${API_BASE_URL}${endpoint}`);
       if (response.ok) {
         const json = await response.json();
+        const payload = json.data !== undefined ? json.data : json;
         return {
-          data: json,
+          data: payload,
           status: response.status,
           source: 'remote',
         };
